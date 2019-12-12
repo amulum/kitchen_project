@@ -2,21 +2,37 @@
 
 {% block title %}Home{% endblock %}
 
-{% block content %}
 {% if user.is_authenticated %}
   Hi {{ user.username }}!
-  <a href="{% url 'logout' %}">logout</a>
   {% else %}
   <p>You are not logged in</p>
-  <p><a href="{% url 'login' %}">login</a></p>
-
-{% for user in users %}
-  {{user.first_name}}
-  {{user.email}}
-  {{user.first_name}}
-  {{user.last_name}}
-  
-  {% endfor %}
 {% endif %}
+{% block content %}
+<div class="wrap-index">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <div class="index-header--img">
+          <!-- jumbotron -->
+          <img style="min-width: 40em; max-width: 100%;" src="https://picsum.photos/500/300" alt="">
+        </div>
+      </div>
+      <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="wrap-header--summary">
+          <div class="header-summary summary-text">
+            Every Which Way to Make a Chocolate Cake
+          </div>
+          <div class="header-summary summary-text-small">
+            There's not only one chocolate cake recipe
+          </div>
+          <!-- readmore -->
+          <div class="header-summary readmore">
+            <a href="#"> Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  
 
 {% endblock %}
