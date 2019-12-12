@@ -18,3 +18,8 @@ from .models import Post, Komen, User
 admin.site.register(Post)
 admin.site.register(Komen)
 admin.site.register(User)
+=======
+from .models import Profile
+
+# Register your models here.
+admin.site.register(Profile)
