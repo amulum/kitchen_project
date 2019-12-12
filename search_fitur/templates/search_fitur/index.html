@@ -1,22 +1,17 @@
-{% extends 'base.html' %}
 
 {% block title %}Home{% endblock %}
-
 {% block content %}
-{% if user.is_authenticated %}
-  Hi {{ user.username }}!
-  <a href="{% url 'logout' %}">logout</a>
-  {% else %}
-  <p>You are not logged in</p>
-  <p><a href="{% url 'login' %}">login</a></p>
+<!-- ini nampilin preview blog di homepage -->
+<div class="wrap-blog">
+  <div class="container">
+   {% for p in blogs %}
+    <img src={{p.gambar}}/>
+    <p>{{p.title}}</p>
+    <p>{{p.author}}</p>
 
-{% for user in users %}
-  {{user.first_name}}
-  {{user.email}}
-  {{user.first_name}}
-  {{user.last_name}}
-  
-  {% endfor %}
-{% endif %}
-
+    <a href="{{p.id}}">Details</a>
+    </br>
+   {%endfor%}
+  </div>
+</div>
 {% endblock %}
