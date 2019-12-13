@@ -1,18 +1,6 @@
-<!-- Menampilakan artikel lengkap plus komennya -->
 {%extends 'base.html'%}
-{%block title%}{%endblock%}
+{%block title%}Detail Product {{product.name}}{%endblock%}
+
 {%block content%}
-<div class="wrap-detail">
-    <div class="container">
-        {%for i in blog%}
-         <p>{{i.id}}</p>
-         <p>{{i.title}}</p>
-         <p>{{i.konten}}</p>
-          {%for j in komen%}
-            <p>{{j.user_id}}</p>
-            <p>{{j.komen}}</p>
-          {%endfor%}
-        {%endfor%}
-    </div>
-</div>
+
 {%endblock%}

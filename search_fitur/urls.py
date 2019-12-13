@@ -13,6 +13,6 @@ urlpatterns = [
     path('<int:blog_id>/', views.coba, name='halo'),
 #   kalo klik baca selengkapnya di homepage
     path('coba/', views.coba, name='wow'),
-    path('category/<str:kategori>/', views.searchposts2, name="kategori")
+    path('category/<str:kategori>/', views.searchposts2, name="kategori"),
     path('register', views.register, name='register'),
 ]
