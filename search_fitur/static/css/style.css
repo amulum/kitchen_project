@@ -118,12 +118,19 @@
 .searchbar-text, .searchbar-main {
     margin: 0.4em 0;
 }
-/*---------------------------- EOF searchbar----------------------------*/
 
-.wrap-base--footer {
+.searchbar-advance {
+    margin: 0.8em 0;
+}
+/*---------------------------- EOF searchbar----------------------------*/
+/* pink grey background */
+.wrap-base--footer, .wrap-searchbar-back{
     background-color: #f9f4ef;
 }
 
+.resultsearch {
+    margin: 0.5em;
+}
 
 /*---------------------------- footer ----------------------------*/
 .join-text{
@@ -166,4 +173,9 @@ font-family: 'Varela Round', sans-serif; */
 
 .part-footer {
     padding-left: 3em;
+}
+
+/* hover class */
+.searchbar-advance a:hover, .readmore a:hover{
+    color: yellow;
 }
