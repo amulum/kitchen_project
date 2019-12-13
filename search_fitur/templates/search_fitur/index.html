@@ -1,0 +1,17 @@
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<!-- ini nampilin preview blog di homepage -->
+<div class="wrap-blog">
+  <div class="container">
+   {% for p in blogs %}
+    <img src={{p.gambar}}/>
+    <p>{{p.title}}</p>
+    <p>{{p.author}}</p>
+
+    <a href="{{p.id}}">Details</a>
+    </br>
+   {%endfor%}
+  </div>
+</div>
+{% endblock %}
