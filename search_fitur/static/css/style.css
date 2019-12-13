@@ -132,6 +132,30 @@
     margin: 0.5em;
 }
 
+/*---------------------------- index content ----------------------------*/
+
+.minicontent-title {
+    color: grey;
+
+}
+
+.wrap-minicontent {
+    padding: 1em;
+}
+
+.wrap-user--icon ul li{
+    margin-left: 0.3em;
+}
+
+.user-info--name {
+    font-weight: 700;
+}
+.user-info--name {
+    color: blue;
+    font-weight: 500;
+}
+/*---------------------------- EOF indexcontent ----------------------------*/
+
 /*---------------------------- footer ----------------------------*/
 .join-text{
     padding: 15px 0;
@@ -178,4 +202,9 @@ font-family: 'Varela Round', sans-serif; */
 /* hover class */
 .searchbar-advance a:hover, .readmore a:hover{
     color: yellow;
+}
+
+.zoom:hover {
+    transition: transform .45s;
+    transform: scale(1.02);
 }
