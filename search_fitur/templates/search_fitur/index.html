@@ -14,7 +14,7 @@
       <div class="col-6">
         <div class="index-header--img">
           <!-- jumbotron -->
-          <img style="min-width: 40em; max-width: 100%;" src="https://picsum.photos/500/300" alt="">
+          <img class="rounded" style="min-width: 40em; max-width: 100%;" src="https://picsum.photos/500/300" alt="">
         </div>
       </div>
       <div class="col-6 align-items-center">
@@ -54,7 +54,7 @@
                         <div style="width:45em; height:2em;" id="header-search">
                             <form class='form-group' action="{% url 'search_fitur:cari' %}" method="GET" value="{{request.GET.q}}">
                                 <div class="input-group-prepend">  
-                                <span class="input-group-text" id="basic-addon1"><img src=""></span>
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
                                 <input  class="form-control" list="title" type="text" name="q" value="{{request.GET.q}}" placeholder="What's cooking?"/>
                                 <datalist id="title">
                                 {% for i in blogs %}
@@ -80,7 +80,7 @@
                           <br/>
                         {% endfor %}
                       {% else %}
-                        No search results for this query
+                        <!-- No search results for this query -->
                       {% endif %} 
                     {% endif %}
                   </div>
