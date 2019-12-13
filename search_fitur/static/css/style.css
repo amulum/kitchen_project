@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Solway:400,500,700|Varela+Round&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap');
 /*---------------------------- header base ----------------------------*/
 
 .wrap-container--header{
@@ -99,16 +99,26 @@
 }
 
 .wrap-base--content {
-    margin-top: 4em;
+    margin-top: 3em;
 }
 /*---------------------------- EOF header base ----------------------------*/
 
 /*---------------------------- index ----------------------------*/
 .header-summary {
-    margin: 2em auto;
+    margin: 1em auto;
+    padding: 1em 3em;
+}
+
+.header-summary a{
+    color: black;
 }
 
 /*---------------------------- EOF index----------------------------*/
+/*---------------------------- searchbar----------------------------*/
+.searchbar-text, .searchbar-main {
+    margin: 0.4em 0;
+}
+/*---------------------------- EOF searchbar----------------------------*/
 
 .wrap-base--footer {
     background-color: #f9f4ef;
@@ -143,7 +153,12 @@ font-family: 'Varela Round', sans-serif; */
     font-size: larger;
 }
 
-
+/* large bold title post */
+.font-style-4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: 600;
+}
 
 .fa {
     margin: 0.2em;
